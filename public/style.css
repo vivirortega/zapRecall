@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box;
+  }
+
+body {
+    background-color: #FB6B6B;
+    font-family: 'Recursive';
+}
+
+/* ------tela de inicio --------- */
+
+main {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+.big-title {
+    font-size: 25px;
+    color: #FFFFFF;
+    font-family: 'Righteous';
+    letter-spacing: -0.012em;
+    line-height: 31px;
+}
+
+.init-button {
+    width: 141px;
+    height: 31px;
+    background-color: #FFFFFF;
+    border: 1px solid #D70900;
+    border-radius: 5px;
+    font-family: 'Recursive';
+    color: #D70900;
+    font-size: 12px;
+    margin-top: 73px;
+}
+
+/* --------------------------- */
