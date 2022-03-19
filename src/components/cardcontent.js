@@ -1,6 +1,6 @@
 import Card from "./card";
 
-export default function DeckContent() {
+export default function DeckContent(props) {
      
   const text = [{
         questionNumber: "Pergunta 1",
@@ -47,9 +47,8 @@ export default function DeckContent() {
       }];
 
       return (
-        <div className="front-card">
+        <div>
         {text.map(content => <Card questionNumber={content.questionNumber} question={content.question} answer={content.answer}/>)}          
         </div>
       )
-
-  }
+}
