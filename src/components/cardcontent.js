@@ -4,6 +4,8 @@ import Footer from "./footer";
 
 export default function DeckContent() {
   const [count, setCount] = useState(0);
+  const [step, setStep] = useState("start-page")
+  const [sucess, setSucess] = useState(true);
      
   const text = [{
         questionNumber: "Pergunta 1",
@@ -51,8 +53,10 @@ export default function DeckContent() {
 
       return (
         <div>
-        {text.map(content => <Card questionNumber={content.questionNumber} question={content.question} answer={content.answer} count={count} setCount={setCount} />)}  
-        <Footer count={count} setCount={setCount}/>        
+        {text.map(content => <Card questionNumber={content.questionNumber} question={content.question} answer={content.answer} count={count} setCount={setCount} setStep={setStep} step={step} setSucess={setSucess}/>)}
+        <div>
+        <Footer count={count} setCount={setCount} setStep={setStep} step={step} setSucess={setSucess} sucess={sucess}/>        
         </div>
+        </div>  
       )
 }
