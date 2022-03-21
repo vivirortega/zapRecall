@@ -52,11 +52,9 @@ export default function DeckContent() {
       }];
 
       return (
-        <div>
+        <div className="content">
         {text.map(content => <Card questionNumber={content.questionNumber} question={content.question} answer={content.answer} count={count} setCount={setCount} setStep={setStep} step={step} setSucess={setSucess}/>)}
-        <div>
         <Footer count={count} setCount={setCount} setStep={setStep} step={step} setSucess={setSucess} sucess={sucess}/>        
-        </div>
         </div>  
       )
 }

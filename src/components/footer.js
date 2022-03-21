@@ -1,7 +1,8 @@
 import party from "./../assets/party.png";
-import sad from "./../assets/party.png"
+import sad from "./../assets/sad.png"
 
 export default function Footer({count, sucess}) {
+    
 
     function retry(){
         document.location.reload(true);

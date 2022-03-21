@@ -12,18 +12,19 @@ export default function Card({questionNumber, question, answer, setCount, count,
     const [icon, setIcon] = useState(seta);
     
 
-
     function colorChangeGreen(){
         setColor("green")
         setStep("start-page")
         setIcon(acertou)
         setCount(count +1)
+        
     }
     function colorChangeOrange(){
         setColor("orange")
         setStep("start-page")
         setIcon(quaseerrou)
-        setCount(count +1)  
+        setCount(count +1) 
+        
     }
     function colorChangeRed(){
         setColor("red")
@@ -31,6 +32,7 @@ export default function Card({questionNumber, question, answer, setCount, count,
         setIcon(errou)
         setCount(count +1)
         setSucess(false)
+        
     }
 
 
