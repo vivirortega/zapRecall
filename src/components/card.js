@@ -7,8 +7,8 @@ import {useState} from "react";
 
 export default function Card({questionNumber, question, answer, setCount, count}){
     const [step, setStep] = useState("start-page")
-    const [color, setColor] = useState("none");
-    const [sucess, setSucess] = useState(false);
+    const [color, setColor] = useState("question-number");
+    const [sucess, setSucess] = useState(true);
     const [icon, setIcon] = useState(seta);
 
 
@@ -16,19 +16,20 @@ export default function Card({questionNumber, question, answer, setCount, count}
         setColor("green")
         setStep("start-page")
         setIcon(acertou)
-        setCount(1)
+        setCount(count +1)
     }
     function colorChangeOrange(){
         setColor("orange")
         setStep("start-page")
         setIcon(quaseerrou)
-        setCount(1)  
+        setCount(count +1)  
     }
     function colorChangeRed(){
         setColor("red")
         setStep("start-page")
         setIcon(errou)
-        setCount(1)  
+        setCount(count +1)
+         
     }
 
 
@@ -38,7 +39,7 @@ export default function Card({questionNumber, question, answer, setCount, count}
         <div className="all-cards">
             <div className="card">
             <p className={color}>{questionNumber}</p>
-            <img src={icon} onClick={() => setStep("front-page")}/>
+            <img src={icon} className="arrow-firstscreen" onClick={() => setStep("front-page")}/>
             </div>
         </div>
     )

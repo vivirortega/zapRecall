@@ -188,3 +188,11 @@ p {
     margin-left: 6px;
     font-weight: bold;
 }
+
+.question-number {
+    margin-left: 6px;
+}
+
+.arrow-firstscreen {
+    margin-right: 12px;
+}

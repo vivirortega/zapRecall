@@ -9,7 +9,6 @@ export default function Flashcard() {
         <div className="flash-cardscreen">
         <Header />
         <DeckContent />
-        <Footer />
         </div>
     </main>
     )
