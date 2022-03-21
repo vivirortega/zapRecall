@@ -1,7 +1,9 @@
-export default function Footer() {
+import {useState} from "react";
+
+export default function Footer({count}) {
     return (
         <footer className="footer">
-            <p>0/4 CONCLUÍDOS</p>
+            <p>{count}/8 CONCLUÍDOS</p>
         </footer>
     )
 }

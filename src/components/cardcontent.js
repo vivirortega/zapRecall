@@ -1,6 +1,9 @@
+import {useState} from "react";
 import Card from "./card";
+import Footer from "./footer";
 
 export default function DeckContent() {
+  const [count, setCount] = useState(0);
      
   const text = [{
         questionNumber: "Pergunta 1",
@@ -48,7 +51,8 @@ export default function DeckContent() {
 
       return (
         <div>
-        {text.map(content => <Card questionNumber={content.questionNumber} question={content.question} answer={content.answer}/>)}          
+        {text.map(content => <Card questionNumber={content.questionNumber} question={content.question} answer={content.answer} count={count} setCount={setCount} />)}  
+        <Footer count={count} setCount={setCount}/>        
         </div>
       )
 }

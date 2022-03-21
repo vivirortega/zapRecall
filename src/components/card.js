@@ -5,7 +5,7 @@ import acertou from "./../assets/acertou.png";
 import seta from "./../assets/seta.png";
 import {useState} from "react";
 
-export default function Card({questionNumber, question, answer}){
+export default function Card({questionNumber, question, answer, setCount, count}){
     const [step, setStep] = useState("start-page")
     const [color, setColor] = useState("none");
     const [sucess, setSucess] = useState(false);
@@ -16,16 +16,19 @@ export default function Card({questionNumber, question, answer}){
         setColor("green")
         setStep("start-page")
         setIcon(acertou)
+        setCount(1)
     }
     function colorChangeOrange(){
         setColor("orange")
         setStep("start-page")
-        setIcon(quaseerrou)  
+        setIcon(quaseerrou)
+        setCount(1)  
     }
     function colorChangeRed(){
         setColor("red")
         setStep("start-page")
-        setIcon(errou)  
+        setIcon(errou)
+        setCount(1)  
     }
 
 
