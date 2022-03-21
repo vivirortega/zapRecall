@@ -66,17 +66,18 @@ main {
     justify-content: center;
     flex-direction: row;
     margin-top: 22px;
+    margin-bottom: 40px;
 }
 
 .all-cards {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 5px;
 
 }
 
 .card {
-    margin-top: 40px;
     background-color: #FFFFFF;
     border-radius: 4px;
     width: 182px;
@@ -113,7 +114,6 @@ p {
     color: #333333;
     border-radius: 5px;
     box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.15);
-    margin-top: 40px;
     display: flex;
     justify-content: space-between;
 }
@@ -131,10 +131,6 @@ p {
     margin-left: 6px;
 }
 
-.question-number {
-    font-weight: bold;
-    margin-left: 6px;
-}
 
 .back-page{
     display: flex;
@@ -169,4 +165,25 @@ p {
 .buttons {
     display: flex;
     justify-content: center;
+}
+
+.red {
+    text-decoration: line-through;
+    color: red;
+    margin-left: 6px;
+    font-weight: bold;
+}
+
+.green {
+    text-decoration: line-through;
+    color: green;
+    margin-left: 6px;
+    font-weight: bold;
+}
+
+.orange {
+    text-decoration: line-through;
+    color: orange;
+    margin-left: 6px;
+    font-weight: bold;
 }

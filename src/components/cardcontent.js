@@ -1,6 +1,6 @@
 import Card from "./card";
 
-export default function DeckContent(props) {
+export default function DeckContent() {
      
   const text = [{
         questionNumber: "Pergunta 1",
